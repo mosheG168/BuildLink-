@@ -1,0 +1,10 @@
+export { default as SectionShell } from "./SectionShell.jsx";
+export { default as BasicDetailsSection } from "./BasicDetailsSection.jsx";
+export { default as CoverageAreasSection } from "./CoverageAreasSection.jsx";
+export { default as AddressSection } from "./AddressSection.jsx";
+export { default as PortfolioSection } from "./PortfolioSection.jsx";
+export { default as ContactSection } from "./ContactSection.jsx";
+export { default as SocialsSection } from "./SocialsSection.jsx";
+export { default as SkillsServicesSection } from "./SkillsServicesSection.jsx";
+export { default as ContractorLicenseSection } from "./ContractorLicenseSection.jsx";
+export { default as SubLicenseSection } from "./SubLicenseSection.jsx";

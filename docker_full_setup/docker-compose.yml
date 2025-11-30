@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - buildlink_network
+
+  backend:
+    build:
+      context: ..
+      dockerfile: docker_full_setup/backend.Dockerfile
+    ports:
+      - "4000:4000"
+    env_file:
+      - backend.env
+    depends_on:
+      - mongodb
+    networks:
+      - buildlink_network
+
+  python_backend:
+    build:
+      context: ..
+      dockerfile: docker_full_setup/python_backend.Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - buildlink_network
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker_full_setup/frontend.Dockerfile
+    ports:
+      - "80:80"
+    env_file:
+      - frontend.env
+    depends_on:
+      - backend
+      - python_backend
+    networks:
+      - buildlink_network
+
+networks:
+  buildlink_network:
+    driver: bridge
+
+volumes:
+  mongodb_data:

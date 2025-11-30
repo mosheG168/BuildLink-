@@ -1,0 +1,188 @@
+.about-page {
+  min-height: 100vh;
+  background: #e5e7eb;
+  padding-bottom: 4rem;
+  color: #111827;
+}
+
+.about-page .MuiTypography-root {
+  color: #111827;
+}
+
+.about-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #e5e7eb, #ffffff);
+}
+
+.about-badge {
+  font-weight: 600;
+  text-transform: none;
+}
+
+.about-title {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #111827;
+}
+
+.about-subtitle {
+  max-width: 680px;
+  color: #4b5563;
+}
+
+.about-cta-row button {
+  border-radius: 999px;
+}
+
+.about-content {
+  margin-top: 1rem;
+}
+
+.about-card {
+  padding: 1.75rem 1.75rem 1.5rem;
+  border-radius: 18px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  background: #ffffff;
+  color: #111827;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  border-color: #9ca3af;
+}
+
+.about-highlight {
+  background: linear-gradient(135deg, #f5f3ff, #eef2ff);
+}
+
+.about-text {
+  margin-top: 0.4rem;
+}
+
+.about-text + .about-text {
+  margin-top: 0.4rem;
+}
+
+.about-list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.about-list li {
+  margin-bottom: 0.25rem;
+}
+
+.about-list.small li {
+  font-size: 0.88rem;
+}
+
+.about-divider {
+  margin: 3rem 0 1.5rem;
+}
+
+.about-timeline .about-step {
+  padding: 1.25rem 1.2rem;
+  border-radius: 14px;
+  border: 1px dashed #d1d5db;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.about-step-label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  color: #6b7280;
+}
+
+.about-footer-note {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #4b5563;
+}
+
+.about-footer-icon {
+  opacity: 0.8;
+}
+
+.about-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.about-page {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.about-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-list {
+  padding-left: 1.25rem;
+  margin: 0;
+  word-break: break-word;
+}
+
+.about-list li {
+  margin-bottom: 0.5rem;
+}
+
+.about-text {
+  word-break: break-word;
+}
+
+.about-step {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 1rem !important;
+  }
+
+  .about-list {
+    padding-left: 1rem;
+  }
+
+  .about-hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding-top: 3rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-card {
+    padding: 1.25rem 1.1rem 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .about-cta-row button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
