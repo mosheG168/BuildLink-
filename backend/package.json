@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ENV_FILE=.env nodemon index.js",
-    "start": "node server.js",
+    "start": "node index.js",
     "atlas": "ENV_FILE=.env.atlas node index.js"
   },
   "keywords": [],
