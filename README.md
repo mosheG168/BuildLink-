@@ -60,7 +60,7 @@ docker/          # Docker Compose and env templates (if present)
 From the project root: `cd docker_full_setup && docker compose up -d --build` then open `http://localhost` in your browser.
 
 ** Run locally (classic dev mode)**
-Start MongoDB, then in `/backend` run `npm install && npm run dev`, in `/frontend` run `npm install && npm run dev`, and in `/python_backend` run `pip install -r requirements.txt && uvicorn main:app --reload --port 8000`.
+Start MongoDB, then in `/backend` run `npm install && nodemon`, in `/frontend` run `npm install && npm run dev`, and in `/python_backend` run `pip install -r requirements.txt && uvicorn main:app --reload --port 8000`.
 
 
 
